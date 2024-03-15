@@ -3,7 +3,7 @@ const dataSection = document.querySelector(".data-section");
 const genderIndicator = document.querySelector(".genderIndicator");
 const showData = () => {
 	const data = JSON.parse(localStorage.getItem("data"));
-	if (data.length === 0) {
+	if (!data || data?.length === 0) {
 		dataSection.innerHTML = "NO DATA FOUND";
 		return;
 	} else {
