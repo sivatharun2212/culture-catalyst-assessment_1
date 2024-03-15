@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100vw;
+	padding: 4em;
+	background-color: rgb(238, 238, 238);
+}
+
+.from-section {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	border-radius: 1em;
+	box-shadow: 0px 0px 3px 0px rgba(119, 119, 119, 0.568);
+	margin-bottom: 40px;
+}
+.form {
+	width: 100%;
+	display: flex;
+}
+
+.form-left {
+	width: 50%;
+	padding: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}
+.form-right {
+	width: 50%;
+	padding: 4em;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.nameCont,
+.emailCont {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 6px;
+}
+
+.genderCont {
+	width: 100%;
+	display: flex;
+	gap: 6px;
+}
+#name,
+#email {
+	width: 100%;
+	height: 3em;
+	border-radius: 5px;
+	border: 1px solid gray;
+	padding-left: 8px;
+	outline: none;
+}
+#submit {
+	width: 30%;
+	height: 2.5em;
+	font-weight: 800;
+	border: none;
+	background-image: linear-gradient(to right, rgb(90, 128, 141), rgb(141, 209, 231));
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	font-size: 15px;
+}
+#message {
+	height: 100%;
+	resize: none;
+	border-radius: 5px;
+	border: 1px solid gray;
+	padding: 8px;
+	outline: none;
+}
+.data-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.table {
+	width: 100%;
+}
+.table-wrapper:hover {
+	box-shadow: 0px 0px 8px 0px rgba(119, 119, 119, 0.568);
+}
+.time {
+	color: rgb(90, 128, 141);
+	font-size: 15px;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+.column-short {
+	width: 22%;
+}
+.colon {
+	width: 3%;
+}
+.messageCont {
+	width: 100%;
+}
+.table-wrapper {
+	padding: 10px;
+	padding-bottom: 1.5em;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	border-radius: 1em;
+	box-shadow: 0px 0px 3px 0px rgba(119, 119, 119, 0.568);
+	position: relative;
+	overflow: hidden;
+}
+.genderIndicator {
+	width: 40px;
+	height: 140px;
+	background-color: red;
+	position: absolute;
+	top: -50px;
+	right: 10px;
+	transform: rotate(-50deg);
+	box-shadow: -1px 0px 5px 0px rgba(20, 20, 20, 0.658);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.genderIndicator span {
+	transform: rotate(50deg);
+	cursor: pointer;
+}
