@@ -41,7 +41,7 @@
 	padding: 4em;
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
+	justify-content: space-around;
 }
 
 .nameCont,
@@ -140,4 +140,8 @@
 .genderIndicator span {
 	transform: rotate(50deg);
 	cursor: pointer;
+}
+.info {
+	margin-top: 30px;
+	color: crimson;
 }

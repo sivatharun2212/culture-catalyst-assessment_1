@@ -1,6 +1,7 @@
 const submitBtn = document.getElementById("submit");
 const dataSection = document.querySelector(".data-section");
 const genderIndicator = document.querySelector(".genderIndicator");
+const info = document.querySelector(".info");
 const showData = () => {
 	const data = JSON.parse(localStorage.getItem("data"));
 	if (!data || data?.length === 0) {
@@ -50,6 +51,13 @@ const submitData = (e) => {
 	const gender = document.querySelector("input[name='gender']:checked");
 	const message = document.getElementById("message");
 
+	if (name.value === "" || email.value === "" || !gender.value || message.value === "") {
+		info.innerHTML = "All Fields Are Mandatory!";
+		setTimeout(() => {
+			info.innerHTML = "";
+		}, 3000);
+		return;
+	}
 	const storedData = JSON.parse(localStorage.getItem("data"));
 	const dateNow = new Date();
 	const day = dateNow.getDay();
